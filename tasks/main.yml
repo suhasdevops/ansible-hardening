@@ -21,7 +21,6 @@
     - "{{ ansible_os_family | lower }}-{{ ansible_distribution_major_version | lower }}.yml"
     - "{{ ansible_distribution | lower }}.yml"
     - "{{ ansible_os_family | lower }}.yml"
-  ignore_unreachable: yes
   tags:
     - always
 
